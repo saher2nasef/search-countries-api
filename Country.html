@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Country</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/1084e2b76b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css.map" />
+    <link rel="stylesheet" href="css/normallis.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+  </head>
+
+  <body>
+    <div class="BodySite">
+      <nav>
+        <div class="container">
+          <div class="NavBar">
+            <div>
+              <p class="m-0"><a href="/">Where in the World ?</a></p>
+            </div>
+            <div>
+              <button type="button" id="BtnDarkMode">
+                <i class="fa fa-moon"></i>
+              </button>
+              <span>Dark Mode</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <section class="SectionBack">
+          <a href="/"> <i class="fa fa-arrow-left"></i><span>Back</span> </a>
+        </section>
+      </div>
+      <div class="container">
+        <section class="country" id="country">
+          <div class="img" id="img"></div>
+          <div class="data" id="divData"></div>
+        </section>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+      integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Country.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

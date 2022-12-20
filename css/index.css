@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,800&display=swap");
+
+:root {
+  --Color: #000;
+  --BG: #fff;
+  --BorderRadius: 5px;
+  --Box: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  transition: 0.02s;
+}
+body {
+  overflow-x: hidden;
+  background-color: var(--BG);
+  color: var(--Color);
+  transition: 0.4s;
+}
+nav {
+  background-color: var(--BG);
+  box-shadow: var(--Box);
+}
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.NavBar p {
+  font-weight: 800;
+}
+.NavBar p a {
+  color: var(--Color);
+  text-decoration: none;
+}
+
+.NavBar button {  
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Color);
+  background-color: transparent;
+  border-radius: var(--BorderRadius);
+}
+.NavBar button i{
+  width: 30px;
+  height: 30px;  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--Box);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.NavBar button span {
+  font-weight: 700;
+  transition: 0.5s;
+  position: relative;
+  right: 0;
+}
+/* SearchBar */
+.SearchBar {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.SearchBar div.Search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--BG);
+  box-shadow: var(--Box);
+  height: 40px;
+  width: 300px;
+  border-radius: var(--BorderRadius);
+  color: var(--Color);
+}
+.SearchBar div.Search input {
+  width: calc(100% - 50px);
+  height: 100%;
+  padding: 10px 10px 10px 5px;
+  outline: 0;
+  border: 0;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--BG);
+  color: var(--Color);
+  border-radius: var(--BorderRadius);
+}
+.SearchBar div.Search input::placeholder {
+  font-size: 14px;
+}
+.SearchBar div.Search i {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SearchBar select {
+  padding: 8px;
+  background-color: var(--BG);
+  box-shadow: var(--Box);
+  outline: 0;
+  border: 0;
+  border-radius: var(--BorderRadius);
+  color: var(--Color);
+}
+
+/* OR SectionBack */
+.SectionBack {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* padding: 0 50px; */
+}
+.SectionBack a {
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 28px;
+  border-radius: var(--BorderRadius);
+  color: var(--Color);
+  background: var(--BG);
+  box-shadow: var(--Box);
+  text-decoration: none;
+}
+.SectionBack a i {
+  margin-right: 10px;
+}
+/* end */
+/* countries */
+.countries {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* padding: 0 30px; */
+}
+.countries .country {
+  width: 260px;
+  background-color: var(--BG);
+  box-shadow: var(--Box);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 9.5px;
+  height: 310px;
+  transition: 0.3s;
+}
+.countries .country img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--BorderRadius) var(--BorderRadius) 0 0;
+}
+.countries .country .body {
+  padding: 20px;
+  color: var(--Color);
+}
+.countries .country .body h5 {
+  font-size: 23px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  color: var(--Color);
+}
+.countries .country .body strong {
+  text-transform: capitalize;
+  color: var(--Color);
+}
+
+/* Or country */
+.country {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.country .img {
+  width: 40%;
+}
+.country .img img {
+  width: 100%;
+  height: 100%;
+  box-shadow: var(--Box);
+}
+
+.country .data {
+  width: 60%;
+  padding: 30px 0 0 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.country .data h4 {
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.country .data .info {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.country .data .info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.country .data .info ul li {
+  margin-bottom: 4px;
+}
+.country .data .info ul li span:first-child {
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.country .data .info ul li span:last-child {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.country .data .info ul li .languages::after {
+  content: ", ";
+}
+.country .data .info ul li .languages:last-child:after {
+  content: "";
+}
+
+#borderCountries {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+#borderCountries .Conutries {
+  padding: 2px 5px;
+  border-radius: var(--BorderRadius);
+  box-shadow: var(--Box);
+  margin: 2px;
+}
+
+/* All Medias */
+@media (max-width: 500px) {
+  .NavBar span {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: none;
+  }
+  .NavBar {
+    background-color: var(--BG);
+    box-shadow: var(--Box);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+  }
+}
+@media (max-width: 380px) {
+  .countries .country {
+    width: 100%;
+  }
+}
+@media (max-width: 582px) {
+  .SearchBar {
+    flex-direction: column;
+  }
+  .SearchBar div:first-child {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .SearchBar div.Search,
+  .SearchBar select,
+  .SearchBar div {
+    width: 100% !important;
+  }
+}
+@media (max-width: 800px) {
+  #country {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    padding-bottom: 30px;
+  }
+  #country div {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .info {
+    flex-direction: column;
+  }
+  .info ul:last-child {
+    margin-top: 20px !important;
+  }
+  .data {
+    padding: 20px !important;
+  }
+}
